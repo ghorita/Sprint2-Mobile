@@ -1,6 +1,7 @@
 import React from 'react';
 import {View, Text, TextInput, StyleSheet, Image} from 'react-native';
 import gpt from './assets/gpt.png';
+import profile from './assets/profile.png';
 import {FontAwesome, MaterialCommunityIcons} from '@expo/vector-icons';
 
 
@@ -32,6 +33,11 @@ export default function App(){
         <View style = {{flexDirection: "row"}}>
           <Image source = {gpt} style = {styles.gptImgP}/>
           <Text style = {styles.msg}>Olá! Eu sou Mateo, Em que posso ajudá-lo hoje?!</Text>
+        </View>
+
+        <View style = {{flexDirection: "row", marginTop: 20}}>
+          <Text style = {styles.segundoPar}>Olá gostaria de saber como eu faço para agendar uma reunião sobre o CRM.</Text>
+          <Image source = {profile} style = {styles.profileImg}/>
         </View>
 
       </View>
@@ -71,7 +77,23 @@ const styles = StyleSheet.create({
     marginTop: 30,
     fontSize: 18,
     fontWeight: 600,
-    marginRight: 45,
-    paddingVertical: 12
+    marginRight: 50,
+    paddingVertical: 12, 
+    textAlign: "center"
+  },
+
+  profileImg:{
+    width: 40,
+    height: 40, 
+    marginRight: 30
+  },
+
+  segundoPar:{
+    backgroundColor: "gray",
+    marginLeft: 20,
+    fontSize: 18,
+    fontWeight: 600,
+    paddingVertical: 15,
+    textAlign: "center"
   }
 })
