@@ -28,16 +28,17 @@ export default function App(){
       </View>
 
 
-      <View style = {{flex: 1, backgroundColor: "#D3D3D3", alignItems: "center", widht: "100%", textAlign: "center"}}>
+      <View style = {{flex: 1, backgroundColor: "#D3D3D3"}}>
 
         <View style = {{flexDirection: "row"}}>
           <Image source = {gpt} style = {styles.gptImgP}/>
           <Text style = {styles.msg}>Olá! Eu sou Mateo, Em que posso ajudá-lo hoje?!</Text>
         </View>
 
-        <View style = {{flexDirection: "row", marginTop: 20, textAlign: "center"}}>
-          <View style = {{backgroundColor: "gray", borderRadius: 15, marginLeft: 40}}>
-            <Text style = {styles.segundoPar}>Olá gostaria de saber como eu</Text>
+        <View style = {{flexDirection: "row", marginTop: 20}}>
+
+          <View style = {{backgroundColor: "gray", borderRadius: 15, marginLeft: 50}}>
+            <Text style = {styles.segundoPar}>Olá gostaria de saber como eu </Text>
             <Text style = {styles.segundoPar}>faço para agendar uma reunião</Text>
             <Text style = {styles.segundoPar}>sobre CRM</Text>
           </View>
@@ -46,6 +47,32 @@ export default function App(){
             <Image source = {profile} style = {styles.profileImg}/>
           </View>
         </View>
+
+        <View style = {{flexDirection: "row", marginTop: 20}}>
+          <View>
+            <Image source = {gpt} style = {styles.gptImgP2}/>
+          </View>
+         
+         <View style = {{backgroundColor: "gray", borderRadius: 15, marginLeft: 10, marginRight: 85}}>
+            <Text style = {styles.segundoPar}>
+              Claro!, para agendar uma reunião de CRM você  pode clicar AQUI, ou  
+              seguir os seguintes passos: 
+              Entre no site da plusoft.com
+              Coloque o seu mouse sobre o menu "Produtos"
+              Clique em Omni CRM
+              Desça um pouco o site até onde apareça uma opção chamada "Agenda
+              uma Demo".
+              Fale com nosso atendente pelo WhatsApp.
+              Caso não consiga encontrar, você pode ligar para o número
+              (11)XXXX-XXXX  
+            </Text>
+          </View>
+        </View>
+
+        <View style = {{backgroundColor: "white", marginTop: 20, flex: 1}}>
+          <Text style = {styles.input}>Escreva aqui sua mensagem...</Text>
+        </View>
+      
 
       </View>
     </View>
@@ -64,7 +91,7 @@ const styles = StyleSheet.create({
     widht: 40,
     height: 40,
     borderRadius: 20,
-    marginTop: 40, 
+    marginTop: 60, 
   },
 
   nome:{
@@ -85,21 +112,40 @@ const styles = StyleSheet.create({
     fontWeight: 600,
     marginRight: 45,
     paddingVertical: 12, 
-    textAlign: "center"
+    textAlign: "center",
+    paddingRight: 20
   },
 
   profileImg:{
     width: 40,
     height: 40, 
     marginRight: 40,
-    borderRadius: 10
+    borderRadius: 10,
+    marginTop: 30,
   },
 
   segundoPar:{
     fontSize: 18,
     fontWeight: 600,
     textAlign: "center",
-    marginLeft: 60, 
-    paddingRight: 10
+    paddingRight: 40
+  },
+
+  gptImgP2:{
+    widht: 40,
+    height: 40,
+    borderRadius: 20,
+    marginTop: 250, 
+  },
+
+  input:{
+    backgroundColor: "#D3D3D3",
+    fontSize: 24,
+    color: "gray",
+    marginTop: 20,
+    textAlign: "center",
+    borderRadius: 15,
+    marginHorizontal: 20,
+    paddingVertical: 15
   }
 })
