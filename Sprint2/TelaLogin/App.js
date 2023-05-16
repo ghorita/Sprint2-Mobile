@@ -28,16 +28,23 @@ export default function App(){
       </View>
 
 
-      <View style = {{flex: 1, backgroundColor: "#D3D3D3"}}>
+      <View style = {{flex: 1, backgroundColor: "#D3D3D3", alignItems: "center", widht: "100%", textAlign: "center"}}>
 
         <View style = {{flexDirection: "row"}}>
           <Image source = {gpt} style = {styles.gptImgP}/>
           <Text style = {styles.msg}>Olá! Eu sou Mateo, Em que posso ajudá-lo hoje?!</Text>
         </View>
 
-        <View style = {{flexDirection: "row", marginTop: 20}}>
-          <Text style = {styles.segundoPar}>Olá gostaria de saber como eu faço para agendar uma reunião sobre o CRM.</Text>
-          <Image source = {profile} style = {styles.profileImg}/>
+        <View style = {{flexDirection: "row", marginTop: 20, textAlign: "center"}}>
+          <View style = {{backgroundColor: "gray", borderRadius: 15, marginLeft: 40}}>
+            <Text style = {styles.segundoPar}>Olá gostaria de saber como eu</Text>
+            <Text style = {styles.segundoPar}>faço para agendar uma reunião</Text>
+            <Text style = {styles.segundoPar}>sobre CRM</Text>
+          </View>
+
+          <View style = {{marginLeft: 5}}>
+            <Image source = {profile} style = {styles.profileImg}/>
+          </View>
         </View>
 
       </View>
@@ -58,7 +65,6 @@ const styles = StyleSheet.create({
     height: 40,
     borderRadius: 20,
     marginTop: 40, 
-    marginLeft: 10
   },
 
   nome:{
@@ -77,7 +83,7 @@ const styles = StyleSheet.create({
     marginTop: 30,
     fontSize: 18,
     fontWeight: 600,
-    marginRight: 50,
+    marginRight: 45,
     paddingVertical: 12, 
     textAlign: "center"
   },
@@ -85,15 +91,15 @@ const styles = StyleSheet.create({
   profileImg:{
     width: 40,
     height: 40, 
-    marginRight: 30
+    marginRight: 40,
+    borderRadius: 10
   },
 
   segundoPar:{
-    backgroundColor: "gray",
-    marginLeft: 20,
     fontSize: 18,
     fontWeight: 600,
-    paddingVertical: 15,
-    textAlign: "center"
+    textAlign: "center",
+    marginLeft: 60, 
+    paddingRight: 10
   }
 })
