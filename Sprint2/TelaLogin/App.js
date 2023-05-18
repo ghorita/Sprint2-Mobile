@@ -35,7 +35,7 @@ export default function App(){
           <Text style = {styles.msg}>Olá! Eu sou Mateo, Em que posso ajudá-lo hoje?!</Text>
         </View>
 
-        <View style = {{flexDirection: "row", marginTop: 20}}>
+        <View style = {{flexDirection: "row", marginTop: 20, paddingVertical: 10}}>
 
           <View style = {{backgroundColor: "gray", borderRadius: 15, marginLeft: 50}}>
             <Text style = {styles.segundoPar}>Olá gostaria de saber como eu </Text>
@@ -53,7 +53,7 @@ export default function App(){
             <Image source = {gpt} style = {styles.gptImgP2}/>
           </View>
          
-         <View style = {{backgroundColor: "gray", borderRadius: 15, marginLeft: 10, marginRight: 85}}>
+         <View style = {{backgroundColor: "gray", borderRadius: 15, marginLeft: 10, marginRight: 85, paddingVertical: 10}}>
             <Text style = {styles.segundoPar}>
               Claro!, para agendar uma reunião de CRM você  pode clicar AQUI, ou  
               seguir os seguintes passos: 
@@ -128,7 +128,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 600,
     textAlign: "center",
-    paddingRight: 40
+    paddingRight: 40,
   },
 
   gptImgP2:{
